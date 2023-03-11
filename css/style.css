@@ -27,7 +27,7 @@
 body {
   font-size: 0.875rem;
   font-family: "Open Sans", sans-serif;
-  background-color: var(--primary-2);
+  /* background-color: var(--primary-2); */
   color: var(--white);
 }
 
@@ -43,6 +43,9 @@ a {
 }
 
 /* NAVBAR */
+.header {
+  background-color: var(--primary-1);
+}
 
 .navbar ul {
   list-style: none;
@@ -59,8 +62,39 @@ a {
 
 /* Intro */
 
+.intro {
+  background-color: var(--primary-1);
+  background-image: url(../images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: 0 300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro {
+    background-image: url(../images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+}
+
+.intro img {
+  width: 450px !important;
+}
+
 .intro h3 {
   font-weight: 700;
+}
+
+.intro button {
+  color: var(--white);
+  background-color: var(--accent-blue);
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+.intro button:is(:hover, :focus) {
+  background-color: var(--accent-cyan);
 }
 
 /* Attribution */

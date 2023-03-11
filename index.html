@@ -20,8 +20,8 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
-      <nav class="navbar shadow">
+    <header class="header">
+      <nav class="navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="images/logo.svg" alt="" width="100px" />
@@ -44,19 +44,32 @@
 
     <!-- Intro -->
     <section class="intro">
-      <div class="container-fluid">
-        <div class="row d-flex justify-content-center pt-3">
-          <div class="col-md-6">
-            <img
-              src="images/illustration-intro.png"
-              class="img-fluid"
-              alt="Intro"
-            />
-          </div>
-          <h3 class="display-5 mt-3 text-center">
-            All your files in one secure location,<br />
-            accessible anywhere.
+      <div class="container-fluid py-3">
+        <div class="row d-flex justify-content-center">
+          <img
+            src="images/illustration-intro.png"
+            class="mx-auto"
+            alt="Intro"
+          />
+        </div>
+        <div class="text-center">
+          <h3 class="display-5 mt-4">
+            All your files in one secure <br class="d-sm-none" />
+            location,<br class="d-none d-md-block" />
+            accessible <br class="d-sm-none" />
+            anywhere.
           </h3>
+          <p class="mt-4">
+            Fylo stores all your most important files in
+            <br class="d-md-none" />
+            one secure location. <br class="d-none d-md-block" />
+            Access them wherever <br class="d-md-none" />
+            you need, share and collaborate with
+            <br class="d-none d-md-block" />
+            friends <br class="d-md-none" />
+            family, and co-workers.
+          </p>
+          <button class="btn px-5">Get Started</button>
         </div>
       </div>
     </section>
