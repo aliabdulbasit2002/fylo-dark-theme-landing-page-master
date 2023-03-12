@@ -212,6 +212,23 @@ a {
   }
 }
 
+/* Footer */
+
+.footer {
+  background-color: var(--primary-3);
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer .icon a i {
+  border: 1px solid var(--white);
+  padding: 8px;
+  border-radius: 50%;
+  color: var(--white);
+}
+
 /* Attribution */
 
 .attribution {
