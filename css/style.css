@@ -99,14 +99,48 @@ a {
 
 /* Services */
 
-
 /* Stay Productive */
 .stay-productive img {
   width: 450px !important;
 }
 
-.stay-productive h2{
+.stay-productive h2 {
   font-weight: 700;
+}
+
+.stay-productive a {
+  color: var(--accent-cyan);
+  border-bottom: 1px solid var(--accent-cyan);
+  border-radius: 0;
+  position: relative;
+}
+
+.stay-productive a:hover {
+  border-bottom: 1px solid var(--white);
+}
+
+.stay-productive a::after {
+  content: url(../images/icon-arrow.svg);
+  margin-left: 10px;
+  position: absolute;
+  top: 10px;
+}
+
+.stay-productive a:hover::after {
+  transform: translateX(5px);
+  transition: 1s ease;
+}
+
+/* TEstimonial */
+
+.testimonials .card {
+  background-color: var(--primary-4);
+  max-width: 450px;
+}
+
+.testimonials .card img {
+  width: 40px;
+  border-radius: 50%;
 }
 
 /* Attribution */
