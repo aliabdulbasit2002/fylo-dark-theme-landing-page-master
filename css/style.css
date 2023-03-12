@@ -135,12 +135,21 @@ a {
 
 .testimonials .card {
   background-color: var(--primary-4);
-  max-width: 450px;
+  max-width: 400px;
+  position: relative;
 }
 
 .testimonials .card img {
   width: 40px;
   border-radius: 50%;
+}
+
+.testimonials .card.q::before {
+  content: url(../images/bg-quotes.png);
+  z-index: -1;
+  position: absolute;
+  top: -35px;
+  left: -10px;
 }
 
 /* Attribution */
