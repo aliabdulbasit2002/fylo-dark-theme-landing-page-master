@@ -152,6 +152,66 @@ a {
   left: -10px;
 }
 
+/* Early Access */
+.early-access {
+  background: linear-gradient(var(--primary-2) 50%, var(--primary-3) 50%);
+}
+
+.early-access .row {
+  height: 500px;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.early-access .card {
+  background-color: var(--primary-1);
+  border-radius: 15px;
+  /* max-width: ; */
+}
+
+.early-access .card input,
+.early-access .card button {
+  width: 80%;
+  border-radius: 50px;
+}
+
+.early-access .card input {
+  border: none;
+  padding: 10px 20px;
+}
+
+.early-access .card input:focus {
+  outline: 1px solid --accent-blue;
+  border: none;
+}
+
+.early-access .card button {
+  background-color: var(--accent-blue);
+  color: var(--white);
+  padding: 10px 20px;
+}
+
+.early-access .card button:hover {
+  background-color: var(--accent-cyan);
+}
+
+@media only screen and (min-width: 770px) {
+  .early-access .card {
+    max-width: 850px;
+  }
+
+  .early-access .card input {
+    width: 70%;
+    border-radius: 50px;
+    padding: 10px 20px;
+  }
+
+  .early-access .card button {
+    width: 30%;
+    padding: 10px 20px;
+  }
+}
+
 /* Attribution */
 
 .attribution {
